@@ -10,8 +10,10 @@
     1. zet de actuele Tikkie-link in de href van de "Betaal via Tikkie"-knop
        (evt. target="_blank" rel="noopener" toevoegen voor een nieuw tabblad);
     2. verwijder daarna het "Nog in te vullen"-blok eronder.
-  Tikkie-limiet is € 950 per verzoek. Voor grotere bedragen: IBAN + tenaamstelling
-  invullen in het blok "Groter bedrag".
+  Tikkie-limiet is € 950 per verzoek. Besluit uit "aanpassingen 1e versie.docx"
+  (15-09-2026): GEEN IBAN/overboeking voor grotere bedragen — voor meer dan
+  € 950 wordt verwezen naar een tweede Tikkie-verzoek. Het "Groter bedrag"-blok
+  met IBAN-placeholder is daarom verwijderd.
 -->
 <html lang="nl">
 <head>
@@ -73,17 +75,8 @@
     <div class="wrap">
       <h2 id="h-groter">Groter bedrag</h2>
       <p>Een Tikkie-verzoek gaat tot <strong>€&nbsp;950</strong>. Wil je meer
-         bijdragen, dan kan dat met een gewone overboeking.</p>
-
-      <div class="note">
-        <span class="note__tag">Nog in te vullen</span>
-        <p>Rekeningnummer en tenaamstelling komen hier:</p>
-        <p>
-          IBAN: <span class="geef__url">NL00 BANK 0000 0000 00</span><br>
-          Ten name van: <span class="geef__url">M. Rensen</span><br>
-          Omschrijving: <span class="geef__url">opstart Mondéall</span>
-        </p>
-      </div>
+         bijdragen, dan kan dat gewoon met een tweede Tikkie-verzoek — via
+         dezelfde knop hierboven.</p>
     </div>
   </section>
 
@@ -108,7 +101,7 @@
     </div>
     <p>Een persoonlijk initiatief van Mathieu Rensen. Bijdragen gaan naar hem privé,
        los van het latere platform.</p>
-    <p class="foot__meta">Websitetekst v0.5 · 9 september 2026 · www.gelddelen.nl/steun</p>
+    <p class="foot__meta">Websitetekst v0.6 · 15 september 2026 · www.gelddelen.nl/steun</p>
   </div>
 </footer>
 </body>
