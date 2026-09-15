@@ -1,0 +1,4 @@
+# www.gelddelen.nl — bewust niet indexeren.
+# Dit is een gerichte pagina voor bekenden, geen publieke landingspagina.
+User-agent: *
+Disallow: /

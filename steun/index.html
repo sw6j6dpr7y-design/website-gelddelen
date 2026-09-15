@@ -1,0 +1,115 @@
+<!doctype html>
+<!--
+  www.gelddelen.nl/steun — tussenpagina.
+
+  Waarom een tussenpagina: een Tikkie-verzoek verloopt na ± 2 weken. De QR-code
+  op de hoofdpagina wijst naar DEZE pagina, zodat je alleen hier de link hoeft te
+  vervangen — de QR-code zelf blijft gelijk.
+
+  BIJWERKEN (gemarkeerd met  << ... >> ):
+    1. zet de actuele Tikkie-link in de href van de "Betaal via Tikkie"-knop
+       (evt. target="_blank" rel="noopener" toevoegen voor een nieuw tabblad);
+    2. verwijder daarna het "Nog in te vullen"-blok eronder.
+  Tikkie-limiet is € 950 per verzoek. Voor grotere bedragen: IBAN + tenaamstelling
+  invullen in het blok "Groter bedrag".
+-->
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bijdragen — Mondéall</title>
+  <meta name="description" content="Bijdragen aan de opstartkosten van Mondéall via Tikkie. Je bepaalt zelf het bedrag.">
+  <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+  <meta name="theme-color" content="#07a28f">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#inhoud">Naar de inhoud</a>
+
+<header class="nav">
+  <a class="nav__brand" href="../">
+    <img src="../assets/img/klavertje.png" alt="" width="26" height="26">
+    <span>Mondéall</span>
+  </a>
+  <a class="nav__cta" href="../#waarom">Terug naar het verhaal</a>
+</header>
+
+<main id="inhoud">
+  <div class="hero wrap" id="top">
+    <h1>Bijdragen</h1>
+    <p>Dank je wel. Je bijdrage gaat rechtstreeks naar mij privé, als tegemoetkoming
+       in de opstartkosten van Mondéall — niet naar een bedrijf of stichting, en
+       los van het latere platform. Je bepaalt zelf het bedrag.</p>
+  </div>
+
+  <section class="section" aria-labelledby="h-tikkie">
+    <div class="wrap">
+      <h2 id="h-tikkie">Via Tikkie</h2>
+      <p>De snelste manier. Je betaalt met je eigen bankapp; er is geen account
+         voor nodig.</p>
+
+      <!-- << ZET DE ACTUELE TIKKIE-LINK IN DE href HIERONDER >> -->
+      <p>
+        <a class="btn" href="#tikkie-link-nog-invullen">
+          Betaal via Tikkie
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </p>
+
+      <!-- << haal dit "Nog in te vullen"-blok weg zodra de link erin staat >> -->
+      <div class="note">
+        <span class="note__tag">Nog in te vullen</span>
+        <p>De knop hierboven krijgt de actuele Tikkie-link. Een verzoek is ongeveer
+           twee weken geldig; daarna vervang ik alleen die link — de QR-code op de
+           hoofdpagina blijft gelijk.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint" aria-labelledby="h-groter">
+    <div class="wrap">
+      <h2 id="h-groter">Groter bedrag</h2>
+      <p>Een Tikkie-verzoek gaat tot <strong>€&nbsp;950</strong>. Wil je meer
+         bijdragen, dan kan dat met een gewone overboeking.</p>
+
+      <div class="note">
+        <span class="note__tag">Nog in te vullen</span>
+        <p>Rekeningnummer en tenaamstelling komen hier:</p>
+        <p>
+          IBAN: <span class="geef__url">NL00 BANK 0000 0000 00</span><br>
+          Ten name van: <span class="geef__url">M. Rensen</span><br>
+          Omschrijving: <span class="geef__url">opstart Mondéall</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="h-meer">
+    <div class="wrap">
+      <h2 id="h-meer">Waarom deze pagina apart staat</h2>
+      <p>Deze bijdrage is bewust iets anders dan het latere platform. Zodra Mondéall
+         draait, gaat elke bijdrage aan een Initiatief voor honderd procent
+         rechtstreeks naar de vereniging of stichting. Wat je hier bijdraagt is een
+         tegemoetkoming in de opstartkosten en komt bij mij privé terecht. Er staat
+         niets tegenover en het is niet fiscaal aftrekbaar.</p>
+      <p><a href="../#niet">Lees de volledige uitleg op de hoofdpagina</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__brand">
+      <img src="../assets/img/klavertje.png" alt="" width="24" height="24">
+      <span>Mondéall</span>
+    </div>
+    <p>Een persoonlijk initiatief van Mathieu Rensen. Bijdragen gaan naar hem privé,
+       los van het latere platform.</p>
+    <p class="foot__meta">Websitetekst v0.5 · 9 september 2026 · www.gelddelen.nl/steun</p>
+  </div>
+</footer>
+</body>
+</html>

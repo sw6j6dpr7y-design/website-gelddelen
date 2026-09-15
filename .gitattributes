@@ -1,0 +1,9 @@
+# Houd regeleindes overal LF. De site draait op Vercel (Linux), dus zonder
+# deze regel zet git op Windows de tekstbestanden bij een checkout om naar CRLF.
+* text=auto eol=lf
+
+# Binaire bestanden ongemoeid laten.
+*.jpg  binary
+*.png  binary
+*.svg  binary
+*.ico  binary
