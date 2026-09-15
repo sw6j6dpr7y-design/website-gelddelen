@@ -5,22 +5,21 @@
   <!--
     www.gelddelen.nl/steun — tussenpagina met de echte Tikkie-link.
 
-    Sinds v0.7 (15-09-2026) staat er geen QR-code meer op de hoofdpagina — die
-    wees naar dit adres in plaats van naar een werkende betaling, wat voelde
-    als "een QR-code die niet werkt". De hoofdpagina linkt nu alleen met een
-    knop naar hier. Zodra hieronder een echte Tikkie-link staat, hoort daar
-    ook een QR-code bij (zie stap 3).
+    Websitetekst v0.8 · 15 september 2026. Sinds v0.7 staat er geen QR-code
+    meer op de hoofdpagina — die wees naar dit adres in plaats van naar een
+    werkende betaling, wat voelde als "een QR-code die niet werkt". Vanaf v0.8
+    staat hier de echte Tikkie-link + de bijbehorende, geverifieerde QR-code
+    (assets/qr/tikkie-qr.svg — decodeert exact naar de href hieronder,
+    gecontroleerd met jsQR vóór publicatie).
 
-    BIJWERKEN (gemarkeerd met  << ... >> ):
-      1. zet de actuele Tikkie-link in de href van de "Betaal via Tikkie"-knop
-         (evt. target="_blank" rel="noopener" toevoegen voor een nieuw tabblad);
-      2. verwijder daarna het "Nog in te vullen"-blok eronder;
-      3. genereer met build/make-qr.html een QR-code vóór díe Tikkie-link (pas
-         de url-variabele bovenin dat bestand aan) en zet de SVG als <img>
-         naast de knop, zodat mensen onderweg ook kunnen scannen.
-    Bij een nieuw Tikkie-verzoek (± om de 2 weken) herhaal je stap 1 en 3 — de
-    link én de QR veranderen dan allebei mee, want de QR codeert nu de
-    Tikkie-link zelf, niet meer dit pagina-adres.
+    BIJWERKEN bij een nieuw Tikkie-verzoek (± elke 2 weken, gemarkeerd met
+    << ... >>):
+      1. zet de nieuwe link in de href van de "Betaal via Tikkie"-knop;
+      2. genereer met build/make-qr.html een nieuwe QR-code vóór díe link (pas
+         de url-variabele bovenin dat bestand aan) en vervang
+         assets/qr/tikkie-qr.svg door de nieuwe SVG.
+    Beide moeten samen mee veranderen — de QR codeert de Tikkie-link zelf, niet
+    dit pagina-adres.
 
     Tikkie-limiet is € 950 per verzoek. Besluit uit "aanpassingen 1e versie.docx"
     (15-09-2026): GEEN IBAN/overboeking voor grotere bedragen — voor meer dan
@@ -62,21 +61,18 @@
       <p>De snelste manier. Je betaalt met je eigen bankapp; er is geen account
          voor nodig.</p>
 
-      <!-- << ZET DE ACTUELE TIKKIE-LINK IN DE href HIERONDER >> -->
-      <p>
-        <a class="btn" href="#tikkie-link-nog-invullen">
+      <div class="qr-row">
+        <div class="qr-card">
+          <img src="../assets/qr/tikkie-qr.svg" alt="QR-code naar de Tikkie-betaling" width="150" height="150">
+        </div>
+        <!-- << ZET BIJ EEN NIEUW VERZOEK DE NIEUWE TIKKIE-LINK IN DE href >> -->
+        <a class="btn" href="https://tikkie.me/pay/5a1suafib4aeuv2gn4t2" target="_blank" rel="noopener">
           Betaal via Tikkie
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
-      </p>
-
-      <!-- << haal dit "Nog in te vullen"-blok weg zodra de link erin staat >> -->
-      <div class="note">
-        <span class="note__tag">Nog in te vullen</span>
-        <p>De knop hierboven krijgt de actuele Tikkie-link. Een verzoek is ongeveer
-           twee weken geldig; daarna vervang ik alleen die link — de QR-code op de
-           hoofdpagina blijft gelijk.</p>
       </div>
+      <p class="geef__hint">Scan de QR-code onderweg, of klik/tik op de knop —
+         die opent Tikkie in een nieuw tabblad.</p>
     </div>
   </section>
 
@@ -110,7 +106,7 @@
     </div>
     <p>Een persoonlijk initiatief van Mathieu Rensen. Bijdragen gaan naar hem privé,
        los van het latere platform.</p>
-    <p class="foot__meta">Websitetekst v0.7 · 15 september 2026 · www.gelddelen.nl/steun</p>
+    <p class="foot__meta">Websitetekst v0.8 · 15 september 2026 · www.gelddelen.nl/steun</p>
   </div>
 </footer>
 </body>
