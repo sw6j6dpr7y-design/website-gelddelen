@@ -125,7 +125,12 @@ main { display: block; }
 
 /* ---------- hero ---------- */
 .hero { padding-block: clamp(2.4rem, 8vw, 5rem) clamp(2rem, 5vw, 3rem); border-top: 0; }
-.hero__logo { width: min(78vw, 340px); margin-bottom: 1.8rem; }
+.hero__logo { width: min(78vw, 340px); margin-bottom: 1rem; }
+.hero__tagline {
+  margin: 0 0 1.4rem;
+  font-size: .95rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+  color: var(--teal-strong);
+}
 .hero h1 {
   font-family: var(--serif);
   font-weight: 400;
@@ -218,6 +223,27 @@ main { display: block; }
   transform: rotate(-8deg);
 }
 
+/* ---------- conceptmarkering (herschreven/nieuwe tekst, nog te beoordelen) ---------- */
+.concept-tag {
+  display: inline-block; margin-bottom: .6rem;
+  font-size: .74rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--teal-strong);
+  background: var(--teal-tint);
+  border: 1px solid var(--teal-strong);
+  border-radius: 999px;
+  padding: .25rem .7rem;
+}
+.concept-box {
+  margin: 1.6rem 0;
+  padding: 1.1rem 1.2rem;
+  background: var(--teal-tint);
+  border: 1.5px dashed var(--teal-strong);
+  border-radius: 12px;
+}
+.concept-box > :first-child { margin-top: 0; }
+.concept-box > :last-child { margin-bottom: 0; }
+.concept-box h3 { margin-top: 0; }
+
 /* ---------- placeholder / "nog in te vullen" ---------- */
 .note {
   margin: 1.6rem 0;
@@ -236,16 +262,7 @@ main { display: block; }
 .note p { color: var(--note-ink); }
 
 /* ---------- bijdragen (§9) ---------- */
-.geef {
-  display: grid; gap: 1.6rem; align-items: center;
-  grid-template-columns: 1fr;
-}
-@media (min-width: 620px) { .geef { grid-template-columns: auto 1fr; } }
-.geef__qr {
-  background: #fff; padding: .8rem; border-radius: 14px;
-  box-shadow: var(--shadow); width: 190px; justify-self: start;
-}
-.geef__qr img { width: 100%; }
+.geef { max-width: 30rem; }
 .btn {
   display: inline-flex; align-items: center; justify-content: center;
   flex-wrap: wrap; gap: .3rem .55rem;

@@ -1,23 +1,32 @@
 <!doctype html>
-<!--
-  www.gelddelen.nl/steun — tussenpagina.
-
-  Waarom een tussenpagina: een Tikkie-verzoek verloopt na ± 2 weken. De QR-code
-  op de hoofdpagina wijst naar DEZE pagina, zodat je alleen hier de link hoeft te
-  vervangen — de QR-code zelf blijft gelijk.
-
-  BIJWERKEN (gemarkeerd met  << ... >> ):
-    1. zet de actuele Tikkie-link in de href van de "Betaal via Tikkie"-knop
-       (evt. target="_blank" rel="noopener" toevoegen voor een nieuw tabblad);
-    2. verwijder daarna het "Nog in te vullen"-blok eronder.
-  Tikkie-limiet is € 950 per verzoek. Besluit uit "aanpassingen 1e versie.docx"
-  (15-09-2026): GEEN IBAN/overboeking voor grotere bedragen — voor meer dan
-  € 950 wordt verwezen naar een tweede Tikkie-verzoek. Het "Groter bedrag"-blok
-  met IBAN-placeholder is daarom verwijderd.
--->
 <html lang="nl">
 <head>
   <meta charset="utf-8">
+  <!--
+    www.gelddelen.nl/steun — tussenpagina met de echte Tikkie-link.
+
+    Sinds v0.7 (15-09-2026) staat er geen QR-code meer op de hoofdpagina — die
+    wees naar dit adres in plaats van naar een werkende betaling, wat voelde
+    als "een QR-code die niet werkt". De hoofdpagina linkt nu alleen met een
+    knop naar hier. Zodra hieronder een echte Tikkie-link staat, hoort daar
+    ook een QR-code bij (zie stap 3).
+
+    BIJWERKEN (gemarkeerd met  << ... >> ):
+      1. zet de actuele Tikkie-link in de href van de "Betaal via Tikkie"-knop
+         (evt. target="_blank" rel="noopener" toevoegen voor een nieuw tabblad);
+      2. verwijder daarna het "Nog in te vullen"-blok eronder;
+      3. genereer met build/make-qr.html een QR-code vóór díe Tikkie-link (pas
+         de url-variabele bovenin dat bestand aan) en zet de SVG als <img>
+         naast de knop, zodat mensen onderweg ook kunnen scannen.
+    Bij een nieuw Tikkie-verzoek (± om de 2 weken) herhaal je stap 1 en 3 — de
+    link én de QR veranderen dan allebei mee, want de QR codeert nu de
+    Tikkie-link zelf, niet meer dit pagina-adres.
+
+    Tikkie-limiet is € 950 per verzoek. Besluit uit "aanpassingen 1e versie.docx"
+    (15-09-2026): GEEN IBAN/overboeking voor grotere bedragen — voor meer dan
+    € 950 wordt verwezen naar een tweede Tikkie-verzoek. Het "Groter bedrag"-blok
+    met IBAN-placeholder is daarom verwijderd.
+  -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bijdragen — Mondéall</title>
   <meta name="description" content="Bijdragen aan de opstartkosten van Mondéall via Tikkie. Je bepaalt zelf het bedrag.">
@@ -101,7 +110,7 @@
     </div>
     <p>Een persoonlijk initiatief van Mathieu Rensen. Bijdragen gaan naar hem privé,
        los van het latere platform.</p>
-    <p class="foot__meta">Websitetekst v0.6 · 15 september 2026 · www.gelddelen.nl/steun</p>
+    <p class="foot__meta">Websitetekst v0.7 · 15 september 2026 · www.gelddelen.nl/steun</p>
   </div>
 </footer>
 </body>

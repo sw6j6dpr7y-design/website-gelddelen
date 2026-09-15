@@ -1,32 +1,50 @@
 <!doctype html>
-<!--
-  www.gelddelen.nl — informele privé-ophaalactie van Mathieu Rensen.
-  Websitetekst v0.6 · 15 september 2026.
-  Changelog t.o.v. v0.5, op basis van "aanpassingen 1e versie.docx":
-    - Header: "mensen die ik ken" -> "iedereen die betekenisvol wil bijdragen"
-    - §2: voorbeeld "aanhanger" vervangen door douches/kleedkamers
-    - §3: BOSA niet meer met naam genoemd
-    - §5: "stichting" toegevoegd aan vereniging/school/kerk
-    - §7: bedrag-placeholder vervangen door definitief "geen streefbedrag"
-    - §10: echt e-mailadres (mathieu.rensen@outlook.com), niet langer placeholder
-  Overige punten uit dat document (§2-cijfers, herschrijving §3/§5/§6/§7,
-  nieuw blok "Fonds op Naam" + "Uitgangspunten" in §6, de QR-code-vraag in §9,
-  nieuwsbrief in §10) zijn bewust NOG NIET doorgevoerd — dat zijn aantekeningen,
-  geen kant-en-klare tekst; eerst uitwerken/bevestigen voordat ze hier komen.
-
-  Bouwnotitie: de bouwprompt noemt als domein nog mondeall.eu; op verzoek van
-  Mathieu draait deze pagina op www.gelddelen.nl (nog steeds los van het
-  platform mondeall.nl).
-
-  Bijdragen komen bij Mathieu privé terecht — nooit bij een entiteit.
-  Deze pagina is bewust NIET het platform mondeall.nl.
-  Nog open: §1 (definitieve tekst, staat nu als voorlopige aanzet), §2-cijfers
-  (bewust nog niet toegevoegd, wachten op bron+jaartal), en op /steun de
-  Tikkie-link (§9) — zichtbaar gemarkeerd.
--->
 <html lang="nl">
 <head>
   <meta charset="utf-8">
+  <!--
+    www.gelddelen.nl — informele privé-ophaalactie van Mathieu Rensen.
+    Websitetekst v0.7 · 15 september 2026.
+    Changelog t.o.v. v0.6 — groep 2 uit "aanpassingen 1e versie.docx"
+    (groep 1, in v0.6, stond hieronder; zie git-historie voor het volledige verschil):
+      - Hero: strapline "Platform voor volwaardig geld delen" toegevoegd
+      - §3: de vier systeempunten herschreven (vraag/aanbod bij de markt; de
+        overheid expliciet op afstand van de beleefde wereld/behoeften; familie
+        als "dierbaren die helpen en ondersteunen"; vierde systeem met
+        vrijwilligers/verenigingen/stichtingen/gevende huishoudens/sponsorend
+        bedrijfsleven) — CONCEPTTEKST, zichtbaar gemarkeerd, nog te beoordelen
+      - §5: euro-blok geconcretiseerd (illustratieve, niet aan een platform
+        toegeschreven kostenschets; "Mondéall €1 blijft €1"; sponsors expliciet
+        mkb/familiebedrijven) — CONCEPTTEKST, zichtbaar gemarkeerd
+      - §6: nieuw blok "Fonds op Naam" + "Uitgangspunten" (incl. korte, generieke
+        uitleg van steward ownership) — CONCEPTTEKST, zichtbaar gemarkeerd,
+        raakt fiscale/juridische claims dus extra nadrukkelijk ter controle
+      - §7: "kapsalon" -> "bakkerij" in de openingsvergelijking
+      - §9: QR-code van de homepage gehaald (leidde nog nergens naar een
+        werkende betaling — zie besluit hieronder); alleen de knop naar /steun
+        resteert. De QR komt terug op /steun zodra de echte Tikkie-link er is.
+
+    Nog steeds NIET doorgevoerd, met reden:
+      - §2 (Geven in Nederland) en §3 (Schuyt-afscheidsrede): vorm = voetnoot in
+        de tekst (besloten), maar er is geen cijfer/citaat + bron + jaartal
+        aangeleverd — zonder dat mag hier niets bij (bouwprompt-regel 5).
+      - §10 nieuwsbrief: bewust niet gedaan — een echt aanmeldmechanisme is een
+        externe dienst en botst met "geen tracking/analytics"; de bestaande
+        "mail me"-tekst blijft staan (Mathieu's keuze).
+      - Op /steun ontbreekt nog steeds de echte Tikkie-link — dat is de
+        eigenlijke reden dat er "niets werkt"; QR-verwijdering hierboven lost
+        alleen de misleidende homepage-QR op, niet de onderliggende oorzaak.
+
+    Bouwnotitie: de bouwprompt noemt als domein nog mondeall.eu; op verzoek van
+    Mathieu draait deze pagina op www.gelddelen.nl (nog steeds los van het
+    platform mondeall.nl).
+
+    Bijdragen komen bij Mathieu privé terecht — nooit bij een entiteit.
+    Deze pagina is bewust NIET het platform mondeall.nl.
+    Nog open: §1 (definitieve tekst, staat nu als voorlopige aanzet), §2-cijfers
+    (bewust nog niet toegevoegd, wachten op bron+jaartal), en op /steun de
+    Tikkie-link (§9) — zichtbaar gemarkeerd.
+  -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mondéall — een persoonlijke vraag</title>
   <meta name="description" content="Een informele pagina van Mathieu Rensen voor familie, vrienden en bekenden: wat Mondéall wordt, hoe ver het is, en waar hij nu hulp bij vraagt voor de opstartkosten.">
@@ -64,6 +82,7 @@
       <source srcset="assets/img/mondeall-logo-wit.png" media="(prefers-color-scheme: dark)">
       <img class="hero__logo" src="assets/img/mondeall-logo.png" alt="Mondéall — geld delen" width="900" height="197">
     </picture>
+    <p class="hero__tagline">Platform voor volwaardig geld delen</p>
     <h1>Een persoonlijke vraag aan iedereen die betekenisvol wil bijdragen</h1>
     <p>Voor familie, vrienden en bekenden. Een korte uitleg over wat Mondéall wordt,
        hoe ver het nu is, en waar ik je hulp bij vraag — los van het latere platform.</p>
@@ -133,20 +152,25 @@
          voor gebouwd zijn.</p>
       <p>De socioloog <strong>Theo Schuyt</strong> (VU Amsterdam) beschrijft dat een
          samenleving vier systemen kent om voor elkaar te zorgen:</p>
+      <span class="concept-tag">Concepttekst — nog te beoordelen door Mathieu</span>
       <ol>
-        <li><strong>De markt</strong> — je verdient een inkomen. Maar de markt
+        <li><strong>De markt</strong> — gestuurd door vraag en aanbod: je
+            verdient een inkomen door te werken en te ruilen. Maar de markt
             ruilt; belangeloos geven past er niet in.</li>
         <li><strong>De overheid</strong> — belasting, subsidie, zorg. Rechtvaardig
             en onmisbaar, maar noodzakelijk onpersoonlijk: gebonden aan regels, aan
             politiek, aan wat verantwoord kan worden. Een subsidieregeling reikt
-            tot een grens, en daarachter staat geen loket meer.</li>
-        <li><strong>Familie en naasten</strong> — wie geluk heeft, heeft mensen om
-            zich heen. Maar niet iedereen heeft dat.</li>
+            tot een grens, en raakt vaak verder af van de beleefde wereld en de
+            concrete behoeften van mensen; daarachter staat geen loket meer.</li>
+        <li><strong>Familie en naasten</strong> — de dierbaren die je helpen en
+            ondersteunen als dat nodig is. Wie geluk heeft, heeft mensen om zich
+            heen. Maar niet iedereen heeft dat.</li>
         <li><strong>Maatschappelijke initiatieven</strong> — wat mensen vrijwillig
-            voor elkaar overhebben. Schuyt gebruikt zelf liever deze term dan
-            &ldquo;filantropie&rdquo;, een woord dat al snel klinkt als iets voor
-            de vermogenden, terwijl het in de praktijk draait op gewone
-            huishoudens.</li>
+            voor elkaar overhebben: vrijwilligers, verenigingen en stichtingen,
+            huishoudens die geven, bedrijfsleven dat sponsort. Schuyt gebruikt
+            zelf liever deze term dan &ldquo;filantropie&rdquo;, een woord dat al
+            snel klinkt als iets voor de vermogenden, terwijl het in de praktijk
+            draait op gewone huishoudens.</li>
       </ol>
       <p>Dat vierde systeem is geen restje dat overblijft. Het heeft een eigen
          functie: ruimte voor maatwerk, voor snelheid, voor lokale verschillen,
@@ -241,10 +265,21 @@
            eigenlijk niet. Het staat er wel, maar het werkt niet. Het model is
            gebouwd op grotere bedragen, en kleine bijdragen worden er stilletjes
            door opgegeten.</p>
+
+        <span class="concept-tag">Concepttekst — nog te beoordelen door Mathieu</span>
+        <p>Concreet: gaat er bij veel platforms van jouw euro eerst pakweg een
+           kwartje tot 30 cent vaste kosten af, plus nog een paar procent — dan
+           blijft er weinig of niets over. Dat is een illustratie van hoe zulke
+           kostenmodellen werken, geen cijfer van een met naam genoemd platform.
+           Bij Mondéall komt je hele euro aan: <strong>Mondéall €1 blijft
+           €1</strong>, ook als andere platforms van een kleine bijdrage
+           per saldo minder laten overblijven.</p>
+
         <p>Bij Mondéall blijft een euro een euro. Niet omdat wij zuiniger zijn,
-           maar omdat er iemand anders betaalt: de lokale ondernemers die als
-           sponsor de kosten van het platform dragen, inclusief de kosten van elke
-           transactie. Daardoor hoeft er van jouw bijdrage niets af.</p>
+           maar omdat er iemand anders betaalt: de lokale ondernemers — mkb'ers
+           en familiebedrijven uit de buurt — die als sponsor de kosten van het
+           platform dragen, inclusief de kosten van elke transactie. Daardoor
+           hoeft er van jouw bijdrage niets af.</p>
         <p>Dat is precies waarom het bedrag er niet toe doet. Een bijdrage wordt
            niet betekenisvol door de hoogte, maar doordat iemand ziet wat er nodig
            is en handelt. Een model waarin één euro verdampt, sluit die mensen uit.
@@ -252,11 +287,12 @@
         <img class="euro__leaf" src="assets/img/klavertje.png" alt="" width="400" height="344" loading="lazy">
       </div>
 
-      <p>Dat kan omdat lokale ondernemers, als sponsor, de kosten van het platform
-         al hebben gedekt — inclusief de transactiekosten. Zij zijn niet een logo
-         in de kantlijn; zij zijn de reden dat dit hele model kán bestaan. Zonder
-         hen geen gratis meedelen, en dus geen Mondéall. Ken je een ondernemer die
-         hier goed bij past? Dat gesprek komt eraan zodra het platform klaarstaat.</p>
+      <p>Dat kan omdat lokale ondernemers — mkb'ers en familiebedrijven — als
+         sponsor de kosten van het platform al hebben gedekt — inclusief de
+         transactiekosten. Zij zijn niet een logo in de kantlijn; zij zijn de
+         reden dat dit hele model kán bestaan. Zonder hen geen gratis meedelen,
+         en dus geen Mondéall. Ken je een ondernemer die hier goed bij past? Dat
+         gesprek komt eraan zodra het platform klaarstaat.</p>
       <p>Geen streefbedrag, geen druk, geen dataverkoop. Wie meedeelt, hoeft niets
          achter te laten wat hij niet wil.</p>
     </div>
@@ -279,6 +315,29 @@
             nooit verkocht kan worden en de missie voorop blijft staan.</li>
         <li>De eerste praktijktoets staat gepland bij een sportvereniging in Lochem.</li>
       </ul>
+
+      <div class="concept-box">
+        <span class="concept-tag">Concepttekst — nog te beoordelen door Mathieu</span>
+        <h3>Fonds op Naam</h3>
+        <p>Stichting Naberschap werkt toe naar een vorm waarin iedereen
+           eenvoudig een eigen <strong>Fonds op Naam</strong> kan starten: een
+           nalatenschap die je zelf benoemt, waarvan het jaarlijkse rendement
+           naar lokale goede doelen en projecten gaat — dichtbij, net als de
+           rest van Mondéall.</p>
+        <p><strong>Uitgangspunten daarbij:</strong></p>
+        <ul>
+          <li>Missiegedreven, en op termijn <strong>steward owned</strong>: de
+              zeggenschap ligt bij mensen die de missie bewaken, niet bij
+              aandeelhouders die voor zichzelf winst maximaliseren. Het
+              vermogen blijft aan het doel verbonden, ook als bestuurders
+              wisselen.</li>
+          <li>Dataminimalistisch en met onafhankelijke systemen: niet vast
+              aan één leverancier, en data in een open formaat.</li>
+          <li>Geen reclame, en geen doorverkoop van persoonsgegevens.</li>
+          <li>Privacy gewaarborgd: geen tracking, geen volgen van gebruikers.</li>
+          <li>Anoniem doneren mogelijk, al vanaf één euro.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -287,7 +346,7 @@
     <div class="wrap">
       <span class="section__kicker">07 — Waar ik je hulp bij vraag</span>
       <h2 id="h-hulp">Waar ik je hulp bij vraag</h2>
-      <p>Zou ik een kapsalon beginnen, dan loop ik naar de notaris in Lochem, teken
+      <p>Zou ik een bakkerij beginnen, dan loop ik naar de notaris in Lochem, teken
          een paar papieren, en klaar. Bij Mondéall ligt dat anders — niet omdat het
          ingewikkelder hóeft te zijn, maar omdat het zorgvuldig moet.</p>
       <p>Ik richt niet één onderneming op, maar meerdere: een bedrijf dat het
@@ -344,19 +403,15 @@
       <p>Via Tikkie, waarbij je zelf het bedrag bepaalt.</p>
 
       <div class="geef">
-        <div class="geef__qr">
-          <img src="assets/qr/steun-qr.svg" alt="QR-code die leidt naar www.gelddelen.nl/steun" width="190" height="190">
-        </div>
-        <div>
-          <a class="btn" href="steun/">
-            Naar de bijdragepagina
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <p class="geef__hint">De QR-code en de knop leiden naar
-             <span class="geef__url">www.gelddelen.nl/steun</span> — die pagina houd
-             ik actueel met de juiste Tikkie-link. Voor een groter bedrag staat daar
-             ook een gewone overboeking.</p>
-        </div>
+        <a class="btn" href="steun/">
+          Naar de bijdragepagina
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <p class="geef__hint">De knop leidt naar
+           <span class="geef__url">www.gelddelen.nl/steun</span> — die pagina houd
+           ik actueel met de juiste Tikkie-link (en straks ook de QR-code om
+           onderweg mee te betalen). Voor een groter bedrag kun je gewoon een
+           tweede Tikkie-verzoek sturen.</p>
       </div>
     </div>
   </section>
@@ -387,7 +442,7 @@
        bedrijf of stichting, en los van het latere platform.</p>
     <p>Deze pagina is bewust niet vindbaar via zoekmachines en niet bedoeld voor
        algemene verspreiding.</p>
-    <p class="foot__meta">Websitetekst v0.6 · 15 september 2026 · www.gelddelen.nl</p>
+    <p class="foot__meta">Websitetekst v0.7 · 15 september 2026 · www.gelddelen.nl</p>
   </div>
 </footer>
 </body>
