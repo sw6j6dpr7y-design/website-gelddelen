@@ -3,31 +3,32 @@
 <head>
   <meta charset="utf-8">
   <!--
-    www.gelddelen.nl/steun — tussenpagina met de echte Tikkie-link.
+    www.gelddelen.nl/steun: tussenpagina met de echte Tikkie-link.
 
-    Websitetekst v0.8 · 15 september 2026. Sinds v0.7 staat er geen QR-code
-    meer op de hoofdpagina — die wees naar dit adres in plaats van naar een
-    werkende betaling, wat voelde als "een QR-code die niet werkt". Vanaf v0.8
-    staat hier de echte Tikkie-link + de bijbehorende, geverifieerde QR-code
-    (assets/qr/tikkie-qr.svg — decodeert exact naar de href hieronder,
-    gecontroleerd met jsQR vóór publicatie).
+    Websitetekst v0.9 · 16 september 2026. Sinds v0.7 staat er geen QR-code
+    meer op de hoofdpagina; die wees naar dit adres in plaats van naar een
+    werkende betaling. Sinds v0.8 staat hier de echte Tikkie-link plus de
+    bijbehorende, geverifieerde QR-code (assets/qr/tikkie-qr.svg, decodeert
+    exact naar de href hieronder, gecontroleerd met jsQR vóór publicatie).
+    v0.9: taalkundige pas op verzoek van Mathieu, geen gedachtestreepjes meer
+    in de zichtbare tekst (zie de changelog-comment in ../index.html).
 
     BIJWERKEN bij een nieuw Tikkie-verzoek (± elke 2 weken, gemarkeerd met
     << ... >>):
       1. zet de nieuwe link in de href van de "Betaal via Tikkie"-knop;
-      2. genereer met build/make-qr.html een nieuwe QR-code vóór díe link (pas
+      2. genereer met build/make-qr.html een nieuwe QR-code voor die link (pas
          de url-variabele bovenin dat bestand aan) en vervang
          assets/qr/tikkie-qr.svg door de nieuwe SVG.
-    Beide moeten samen mee veranderen — de QR codeert de Tikkie-link zelf, niet
+    Beide moeten samen mee veranderen: de QR codeert de Tikkie-link zelf, niet
     dit pagina-adres.
 
     Tikkie-limiet is € 950 per verzoek. Besluit uit "aanpassingen 1e versie.docx"
-    (15-09-2026): GEEN IBAN/overboeking voor grotere bedragen — voor meer dan
+    (15-09-2026): geen IBAN/overboeking voor grotere bedragen. Voor meer dan
     € 950 wordt verwezen naar een tweede Tikkie-verzoek. Het "Groter bedrag"-blok
     met IBAN-placeholder is daarom verwijderd.
   -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bijdragen — Mondéall</title>
+  <title>Mondéall: bijdragen</title>
   <meta name="description" content="Bijdragen aan de opstartkosten van Mondéall via Tikkie. Je bepaalt zelf het bedrag.">
   <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
   <meta name="theme-color" content="#07a28f">
@@ -50,9 +51,10 @@
 <main id="inhoud">
   <div class="hero wrap" id="top">
     <h1>Bijdragen</h1>
-    <p>Dank je wel. Je bijdrage gaat rechtstreeks naar mij privé, als tegemoetkoming
-       in de opstartkosten van Mondéall — niet naar een bedrijf of stichting, en
-       los van het latere platform. Je bepaalt zelf het bedrag.</p>
+    <p>Dank je wel. Je bijdrage gaat rechtstreeks naar mij privé, als
+       tegemoetkoming in de opstartkosten van Mondéall. Niet naar een bedrijf
+       of stichting en los van het latere platform. Je bepaalt zelf het
+       bedrag.</p>
   </div>
 
   <section class="section" aria-labelledby="h-tikkie">
@@ -71,8 +73,8 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
       </div>
-      <p class="geef__hint">Scan de QR-code onderweg, of klik/tik op de knop —
-         die opent Tikkie in een nieuw tabblad.</p>
+      <p class="geef__hint">Scan de QR-code onderweg, of klik of tik op de knop.
+         Die opent Tikkie in een nieuw tabblad.</p>
     </div>
   </section>
 
@@ -80,7 +82,7 @@
     <div class="wrap">
       <h2 id="h-groter">Groter bedrag</h2>
       <p>Een Tikkie-verzoek gaat tot <strong>€&nbsp;950</strong>. Wil je meer
-         bijdragen, dan kan dat gewoon met een tweede Tikkie-verzoek — via
+         bijdragen, dan kan dat gewoon met een tweede Tikkie-verzoek, via
          dezelfde knop hierboven.</p>
     </div>
   </section>
@@ -106,7 +108,7 @@
     </div>
     <p>Een persoonlijk initiatief van Mathieu Rensen. Bijdragen gaan naar hem privé,
        los van het latere platform.</p>
-    <p class="foot__meta">Websitetekst v0.8 · 15 september 2026 · www.gelddelen.nl/steun</p>
+    <p class="foot__meta">Websitetekst v0.9 · 16 september 2026 · www.gelddelen.nl/steun</p>
   </div>
 </footer>
 </body>

@@ -185,6 +185,26 @@ main { display: block; }
   display: grid; place-items: center;
 }
 
+/* ---------- vergelijkingstabel (§5) ---------- */
+.table-wrap { margin: 1.4rem 0; overflow-x: auto; }
+table.compare {
+  width: 100%; border-collapse: collapse; font-size: .95em;
+}
+table.compare th, table.compare td {
+  text-align: left; padding: .65rem .9rem; border-bottom: 1px solid var(--line);
+  vertical-align: top; overflow-wrap: break-word; hyphens: auto;
+}
+table.compare thead th {
+  font-family: var(--serif); font-weight: 400; font-size: 1.02em; color: var(--ink);
+  border-bottom: 1.5px solid var(--ink);
+}
+table.compare tbody th, table.compare tbody td:first-child { font-weight: 600; }
+table.compare tbody tr:last-child td { color: var(--teal-strong); font-weight: 600; }
+table.compare tbody tr:last-child { border-bottom: none; }
+@media (max-width: 420px) {
+  table.compare th, table.compare td { padding: .55rem .5rem; }
+}
+
 /* ---------- portret (§1) ---------- */
 .portret { margin: 0 0 1.8rem; }
 .portret img { border-radius: 12px; box-shadow: var(--shadow); }
