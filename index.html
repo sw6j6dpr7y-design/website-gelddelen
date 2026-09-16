@@ -4,48 +4,18 @@
   <meta charset="utf-8">
   <!--
     www.gelddelen.nl — informele privé-ophaalactie van Mathieu Rensen.
-    Websitetekst v0.9 · 16 september 2026.
-    Changelog t.o.v. v0.8, op basis van "2e wijzigingen website gelddelen.docx":
-
-    Taalkundige pas (sitewide, "Algemeen" in dat document): geen gedachtestreepjes
-    (—) meer in de zichtbare tekst, komma's gecontroleerd, B2-niveau Nederlands,
-    klemtoonaccenten (hóeft/wíl/kán/níet/nú/bínnen) verwijderd, "Tikkie" consequent
-    met hoofdletter. Geldt voor beide pagina's; koppeltekens in samenstellingen
-    (B2-niveau, mkb'ers, Mondéall B.V.) zijn geen gedachtestreepjes en blijven staan.
-
-    Inhoudelijk:
-      - §1: definitieve tekst van Mathieu ("Tekst 01") verwerkt, niet langer
-        een voorlopige aanzet. Twee kleine grammaticale correcties daarin: "wordt"
-        toegevoegd aan de laatste zin ("... gegeven en ontvangen wordt.") en "bij"
-        toegevoegd aan "aansluit bij wat lokaal betekenisvol is" — geen
-        inhoudelijke wijziging, wel correct Nederlands zoals gevraagd.
-      - §2: kerncijfers toegevoegd (Geven in Nederland 2026, Centrum voor
-        Filantropische Studies, Vrije Universiteit Amsterdam; cijfers over 2024,
-        gepresenteerd 26-06-2026): huishoudens gaven €2,35 miljard, gemiddeld
-        €415 per gevend huishouden, 76% van de huishoudens gaf; nalatenschappen
-        €512 miljoen (+13% t.o.v. 2022). Bron: fondsenwerving.nl-verslag van dat
-        rapport (geen toegang tot het onderliggende OSF-rapport zelf).
-      - §3: "Concepttekst akkoord" (Tekst 03) — conceptmarkering verwijderd, tekst
-        blijft ongewijzigd op de taalkundige pas na. Het genoemde bronbestand
-        (Afscheidsrede_prof._Theo_Schuyt_26_juni_2026.pdf) staat niet in de map
-        "materialen website" en kon dus niet gelezen worden; een citaat uit die
-        rede is daarom nog niet toegevoegd.
-      - §5 (Tekst 05): uitgebreid naar landelijke goede doelen, niet alleen
-        platforms, met een tabel met werkelijk onderzochte cijfers zonder namen
-        van platforms of goede doelen. Platformcijfers: eigen vergelijking van
-        publieke tarievenpagina's (vaste kosten circa €0,25 tot €1, plus 2% tot
-        7%). Cijfer goede doelen: CBF, gemiddeld 89 cent van elke euro naar de
-        missie (2020, exacte jaartal van de dataset niet vermeld op de CBF-pagina
-        zelf). Nog als concept gemarkeerd, ter controle van de cijfers.
-      - §6 (Tekst 06): "Fonds op Naam" staat nu in een eigen kadertje, los van de
-        uitgangspunten. Die uitgangspunten gaan over het platform (onderscheidend
-        van commerciële crowdfundingplatforms) en hebben een nieuwe koptekst:
-        "Volwaardig geld delen betekent bij Mondéall". Nog als concept gemarkeerd.
-      - §7: strapline "Volwaardig geld delen" is inmiddels een terugkerend motief
-        (hero, §6, §9); geen verdere wijziging nodig.
-      - §9 (Tekst 09): koptekst en tekst vervangen door Mathieu's tekst. Kleine
-        correctie: "Ga na de bijdragepagina" → "Ga naar de bijdragepagina" (typo)
-        en "tikkie" → "Tikkie" (eigennaam, hoofdletter).
+    Websitetekst v0.10 · 16 september 2026.
+    Changelog t.o.v. v0.9: het citaat uit Schuyts afscheidsrede staat nu in §3
+    (het PDF-bestand was in v0.9 nog niet bereikbaar; nu opgehaald via de
+    directe link die Mathieu meestuurde en met pdftotext uitgelezen). De
+    §2-bronvermelding is preciezer geworden: auteurs Bekkers, Koolen-Maas en
+    Schuyt, in plaats van alleen de titel van het rapport. De primaire pagina
+    filantropischestudies.nl/geveninnederland/ bevat zelf geen kerncijfers
+    (alleen een verwijzing naar het volledige rapport); de eerder gebruikte
+    cijfers (via fondsenwerving.nl, gecontroleerd bij CBF) blijven staan.
+    Verder geen inhoudelijke wijzigingen. Zie de git-historie voor v0.9 (de
+    taalkundige pas en Tekst 01/05/06/09 uit "2e wijzigingen website
+    gelddelen.docx").
 
     Bouwnotitie: de bouwprompt noemt als domein nog mondeall.eu; op verzoek van
     Mathieu draait deze pagina op www.gelddelen.nl (nog steeds los van het
@@ -53,9 +23,8 @@
 
     Bijdragen komen bij Mathieu privé terecht, nooit bij een entiteit.
     Deze pagina is bewust niet het platform mondeall.nl.
-    Nog open: §3-citaat (bron bekend, PDF niet beschikbaar), de cijfers in §5
-    (concept, ter controle) en het §6-blok (concept, ter controle, bevat
-    fiscale/juridische claims).
+    Nog open: de cijfers in §5 (concept, ter controle) en het §6-blok (concept,
+    ter controle, bevat fiscale/juridische claims).
   -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mondéall: een persoonlijke vraag</title>
@@ -149,8 +118,9 @@
          miljard aan goede doelen: gemiddeld €415 per gevend huishouden, en 76%
          van de huishoudens gaf geld of goederen. Nalatenschappen leverden dat
          jaar €512 miljoen op, een stijging van 13% ten opzichte van 2022
-         (Geven in Nederland 2026, Vrije Universiteit Amsterdam). Er is, in het
-         groot, geen tekort.</p>
+         (Bekkers, Koolen-Maas &amp; Schuyt, <em>Geven in Nederland 2026</em>,
+         Centrum voor Filantropische Studies, Vrije Universiteit Amsterdam).
+         Er is, in het groot, geen tekort.</p>
       <p>En toch:</p>
       <ul>
         <li>kan niet ieder kind mee op schoolkamp;</li>
@@ -205,12 +175,17 @@
          zonder dat er iets wordt afgeroomd.</p>
       <p>Mondéall kiest geen kant. Het enige criterium is of iets de buurt echt
          vooruithelpt.</p>
+      <p class="bron">Schuyt zelf vat het zo samen: &ldquo;Heel kort geformuleerd
+         kent elke samenleving ideaaltypisch vier systemen voor mensen om te
+         leven en te kunnen overleven: 1. een familiesysteem; 2. een
+         overheidssysteem; 3. een marktsysteem en 4. een filantropisch
+         systeem.&rdquo; (Theo Schuyt, afscheidsrede <em>Aandacht voor
+         vermaatschappelijking</em>, Vrije Universiteit Amsterdam, 26 juni
+         2026.)</p>
       <!-- Bouwnotitie: "maatschappelijke initiatieven" is hier Schuyts brede term
            voor het hele vierde systeem. Het platform gebruikt straks "Initiatief"
            (hoofdletter) voor één actie van één vereniging voor één voorziening,
-           zie §5. Dat onderscheid is in de tekst aangehouden.
-           Bron voor een citaat: Afscheidsrede prof. Theo Schuyt, 26 juni 2026
-           (bestand nog niet beschikbaar in de projectmap). -->
+           zie §5. Dat onderscheid is in de tekst aangehouden. -->
     </div>
   </section>
 
@@ -491,7 +466,7 @@
        een bedrijf of stichting en los van het latere platform.</p>
     <p>Deze pagina is bewust niet vindbaar via zoekmachines en niet bedoeld voor
        algemene verspreiding.</p>
-    <p class="foot__meta">Websitetekst v0.9 · 16 september 2026 · www.gelddelen.nl</p>
+    <p class="foot__meta">Websitetekst v0.10 · 16 september 2026 · www.gelddelen.nl</p>
   </div>
 </footer>
 </body>

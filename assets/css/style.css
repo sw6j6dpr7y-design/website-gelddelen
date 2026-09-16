@@ -165,6 +165,10 @@ main { display: block; }
 .section p { margin: 0 0 1.1rem; }
 .section p:last-child { margin-bottom: 0; }
 .lead { font-size: 1.08em; color: var(--ink-soft); }
+.bron {
+  font-size: .92em; color: var(--ink-soft);
+  padding-left: .9rem; border-left: 2px solid var(--line);
+}
 
 /* lists */
 .section ul, .section ol { margin: 0 0 1.2rem; padding-left: 0; list-style: none; }
