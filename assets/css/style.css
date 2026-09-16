@@ -268,6 +268,18 @@ table.compare tbody tr:last-child { border-bottom: none; }
 .concept-box > :last-child { margin-bottom: 0; }
 .concept-box h3 { margin-top: 0; }
 
+/* ---------- kadertje (permanente uitlichting, geen conceptmarkering) ---------- */
+.kader {
+  margin: 1.6rem 0;
+  padding: 1.1rem 1.2rem;
+  background: var(--teal-tint);
+  border: 1.5px solid var(--teal-strong);
+  border-radius: 12px;
+}
+.kader > :first-child { margin-top: 0; }
+.kader > :last-child { margin-bottom: 0; }
+.kader h3 { margin-top: 0; }
+
 /* ---------- placeholder / "nog in te vullen" ---------- */
 .note {
   margin: 1.6rem 0;
