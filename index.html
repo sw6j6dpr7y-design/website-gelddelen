@@ -4,25 +4,21 @@
   <meta charset="utf-8">
   <!--
     www.gelddelen.nl — informele privé-ophaalactie van Mathieu Rensen.
-    Websitetekst v1.1 · 16 september 2026.
-    Changelog t.o.v. v1.0: kopteksten aangepast op verzoek van Mathieu. Elke
-    sectie heeft nu een korte, losstaande h2 naast de bestaande genummerde
-    kicker (eyebrow), in plaats van kicker en h2 die (bijna) hetzelfde zeiden:
-      - §1: kicker "Waarom ik dit doe" ongewijzigd; h2 "Waarom ik dit doe" ->
-        "Maak 't mogelijk" (sluit aan bij de slotzin van die sectie).
-      - §3: kicker "Het vierde systeem" ongewijzigd; h2 "Het vierde systeem"
-        -> "Maatschappelijk initiatief".
-      - §4: kicker "We moeten het zelf doen" -> "Noaberschap"; h2 ongewijzigd.
-      - §5: kicker "Wat Mondéall wordt" -> "Online platform"; h2 ongewijzigd.
-      - §6: kicker "Waar we nu staan" -> "De basis is duidelijk"; h2 ongewijzigd.
-      - §7: kicker "Waar ik je hulp bij vraag" -> "Ecosysteem Mondéall"; h2 ongewijzigd.
-      - §8: kicker "Wat er niet mee gebeurt" -> "Crowdfunding"; h2 ongewijzigd.
-      - §9: kicker "Volwaardig geld delen" -> "Maak 't mogelijk" (bookend met
-        §1); h2 ongewijzigd.
-      - §10: kicker "Op de hoogte blijven" -> "Updates"; h2 ongewijzigd.
-      - §2: kicker en h2 ongewijzigd.
-    Geen inhoudelijke wijziging verder. Zie de git-historie voor v0.6 t/m v1.0
-    voor het volledige verloop.
+    Websitetekst v1.2 · 16 september 2026.
+    Changelog t.o.v. v1.1:
+      - Nieuwe §10 "Netwerk" toegevoegd, tussen "Volwaardig geld delen" (nu §9)
+        en "Op de hoogte blijven" (nu §11, was §10). Oproep om niet alleen
+        financieel te helpen, maar ook mensen of bedrijven uit het eigen
+        netwerk aan te dragen; contact via hetzelfde e-mailadres als §11.
+      - Prestatie: de drie fotostrook-afbeeldingen en het portret zijn opnieuw
+        gegenereerd op een breedte die past bij hun werkelijke weergaveformaat
+        (was tot 4x groter dan ooit zichtbaar): samen 626 kB -> 295 kB.
+        width/height-attributen in de HTML meegewerkt. build/optimize-images.ps1
+        aangepast. Nieuw vercel.json geeft /assets/* een uur cache zonder
+        netwerkcontrole en daarna tot 7 dagen "stale-while-revalidate", in
+        plaats van de vorige "max-age=0, must-revalidate" op elk bestand.
+        Aanleiding: Mathieu ervoer de site als traag.
+    Zie de git-historie voor v0.6 t/m v1.1 voor het volledige verloop.
 
     Bouwnotitie: de bouwprompt noemt als domein nog mondeall.eu; op verzoek van
     Mathieu draait deze pagina op www.gelddelen.nl (nog steeds los van het
@@ -83,7 +79,7 @@
       <h2 id="h-waarom">Maak &rsquo;t mogelijk</h2>
 
       <figure class="portret">
-        <img src="assets/img/mathieu.jpg" alt="Mathieu Rensen" width="900" height="1350">
+        <img src="assets/img/mathieu.jpg" alt="Mathieu Rensen" width="760" height="1140" loading="lazy" decoding="async">
         <figcaption>Mathieu Rensen</figcaption>
       </figure>
 
@@ -235,15 +231,15 @@
 
       <div class="fotos">
         <figure>
-          <img src="assets/img/voorbeeld-muziek.jpg" alt="Jongeren spelen cello in een orkest." width="1400" height="933" loading="lazy" decoding="async">
+          <img src="assets/img/voorbeeld-muziek.jpg" alt="Jongeren spelen cello in een orkest." width="800" height="533" loading="lazy" decoding="async">
           <figcaption>Instrumenten voor de jeugdafdeling.</figcaption>
         </figure>
         <figure>
-          <img src="assets/img/voorbeeld-sport.jpg" alt="Veldhockeywedstrijd op een club." width="1400" height="933" loading="lazy" decoding="async">
+          <img src="assets/img/voorbeeld-sport.jpg" alt="Veldhockeywedstrijd op een club." width="800" height="533" loading="lazy" decoding="async">
           <figcaption>Materiaal en onderhoud op het sportpark.</figcaption>
         </figure>
         <figure>
-          <img src="assets/img/voorbeeld-jeugd.jpg" alt="Kind in een voetbaltenue op het veld." width="1000" height="1778" loading="lazy" decoding="async">
+          <img src="assets/img/voorbeeld-jeugd.jpg" alt="Kind in een voetbaltenue op het veld." width="700" height="1244" loading="lazy" decoding="async">
           <figcaption>Meedoen, ook op schoolkamp.</figcaption>
         </figure>
       </div>
@@ -443,9 +439,24 @@
   </section>
 
   <!-- 10 -->
-  <section class="section section--tint" id="op-de-hoogte" aria-labelledby="h-hoogte">
+  <section class="section section--tint" id="netwerk" aria-labelledby="h-netwerk">
     <div class="wrap">
-      <span class="section__kicker">10. Updates</span>
+      <span class="section__kicker">10. Netwerk</span>
+      <h2 id="h-netwerk">Ken je iemand die kan helpen?</h2>
+      <p>Niet alleen geld helpt. Ik bouw ook aan een netwerk van mensen en
+         bedrijven die willen meedenken, meedoen of meehelpen.</p>
+      <p>Wil je zelf een rol spelen? Of ken je iemand in jouw omgeving, een
+         vriend, een kennis, een ondernemer, die dit ook zou willen? Laat het
+         me weten via
+         <a href="mailto:mathieu.rensen@outlook.com">mathieu.rensen@outlook.com</a>,
+         dan neem ik contact op.</p>
+    </div>
+  </section>
+
+  <!-- 11 -->
+  <section class="section" id="op-de-hoogte" aria-labelledby="h-hoogte">
+    <div class="wrap">
+      <span class="section__kicker">11. Updates</span>
       <h2 id="h-hoogte">Op de hoogte blijven</h2>
       <p>Wil je horen hoe het verdergaat: de oprichting van de BV, de start van
          de pilot, het eerste Initiatief dat live gaat? Laat het me weten, dan
@@ -468,7 +479,7 @@
        een bedrijf of stichting en los van het latere platform.</p>
     <p>Deze pagina is bewust niet vindbaar via zoekmachines en niet bedoeld voor
        algemene verspreiding.</p>
-    <p class="foot__meta">Websitetekst v1.1 · 16 september 2026 · www.gelddelen.nl</p>
+    <p class="foot__meta">Websitetekst v1.2 · 16 september 2026 · www.gelddelen.nl</p>
   </div>
 </footer>
 </body>
