@@ -5,15 +5,14 @@
   <!--
     www.gelddelen.nl/steun: tussenpagina met de echte Tikkie-link.
 
-    Websitetekst v1.3 · 16 september 2026 (op deze pagina zelf geen inhoudelijke
-    wijziging in v1.3; zie de
-    changelog-comment in ../index.html). Sinds v0.7 staat er geen QR-code
-    meer op de hoofdpagina; die wees naar dit adres in plaats van naar een
-    werkende betaling. Sinds v0.8 staat hier de echte Tikkie-link plus de
-    bijbehorende, geverifieerde QR-code (assets/qr/tikkie-qr.svg, decodeert
-    exact naar de href hieronder, gecontroleerd met jsQR vóór publicatie).
-    v0.9: taalkundige pas op verzoek van Mathieu, geen gedachtestreepjes meer
-    in de zichtbare tekst (zie de changelog-comment in ../index.html).
+    Websitetekst v1.5 · 25 september 2026. Versienummer gelijkgetrokken met de
+    hoofdpagina; op deze pagina zelf geen inhoudelijke wijziging t.o.v. v1.4.
+    v1.4 t.o.v. v1.3: zin in de footer over bezoekcijfers zonder cookies en
+    persoonsgegevens (gelijk aan de hoofdpagina). Sinds v0.7 staat er geen
+    QR-code meer op de hoofdpagina. Sinds v0.8 staat hier de echte Tikkie-link
+    plus de bijbehorende, geverifieerde QR-code (assets/qr/tikkie-qr.svg,
+    decodeert exact naar de href hieronder, gecontroleerd met jsQR vóór
+    publicatie). v0.9: geen gedachtestreepjes meer in de zichtbare tekst.
 
     BIJWERKEN bij een nieuw Tikkie-verzoek (± elke 2 weken, gemarkeerd met
     << ... >>):
@@ -27,7 +26,8 @@
     Tikkie-limiet is € 950 per verzoek. Besluit uit "aanpassingen 1e versie.docx"
     (15-09-2026): geen IBAN/overboeking voor grotere bedragen. Voor meer dan
     € 950 wordt verwezen naar een tweede Tikkie-verzoek. Het "Groter bedrag"-blok
-    met IBAN-placeholder is daarom verwijderd.
+    met IBAN-placeholder is daarom verwijderd. OPEN: laten testen of dezelfde
+    link twee keer door dezelfde persoon te betalen is.
   -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mondéall: bijdragen</title>
@@ -110,11 +110,13 @@
     </div>
     <p>Een persoonlijk initiatief van Mathieu Rensen. Bijdragen gaan naar hem privé,
        los van het latere platform.</p>
-    <p class="foot__meta">Websitetekst v1.3 · 16 september 2026 · www.gelddelen.nl/steun</p>
+    <p>Deze pagina telt alleen hoe vaak ze wordt bezocht, zonder cookies en
+       zonder persoonsgegevens.</p>
+    <p class="foot__meta">Websitetekst v1.5 · 25 september 2026 · www.gelddelen.nl/steun</p>
   </div>
 </footer>
 
-<!-- Vercel Web Analytics — zie de toelichting in ../index.html. -->
+<!-- Vercel Web Analytics, zie de toelichting in ../index.html. -->
 <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

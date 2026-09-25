@@ -3,34 +3,56 @@
 <head>
   <meta charset="utf-8">
   <!--
-    www.gelddelen.nl — informele privé-ophaalactie van Mathieu Rensen.
-    Websitetekst v1.3 · 16 september 2026.
-    Changelog t.o.v. v1.2:
-      - §5-kader: "Mondéall €1 blijft €1" -> "Mondéall's € 1 blijft € 1".
-      - §6, bullet 1: was gesteld alsof de uitwerking met een belastingadviseur
-        en jurist al klaar is; nu expliciet "moet nog gebeuren".
-      - §6, bullet 2 (Stichting Naberschap): twee zinnen toegevoegd. Mathieu
-        zal zelf geen deel uitmaken van het bestuur; de ANBI-status geeft
-        belastingvoordelen maar kost ook meer.
-      - §6, bullet 4 (stichting wordt eigenaar): toegevoegd dat dit via een
-        gouden aandeel gaat.
-      - §6, lijst "Volwaardig geld delen betekent bij Mondéall": bullet
-        toegevoegd dat een Initiatief starten of een Fonds op Naam inrichten
-        altijd kosteloos is.
-    Changelog t.o.v. v1.1 (in v1.2):
-      - Nieuwe §10 "Netwerk" toegevoegd, tussen "Volwaardig geld delen" (nu §9)
-        en "Op de hoogte blijven" (nu §11, was §10). Oproep om niet alleen
-        financieel te helpen, maar ook mensen of bedrijven uit het eigen
-        netwerk aan te dragen; contact via hetzelfde e-mailadres als §11.
-      - Prestatie: de drie fotostrook-afbeeldingen en het portret zijn opnieuw
-        gegenereerd op een breedte die past bij hun werkelijke weergaveformaat
-        (was tot 4x groter dan ooit zichtbaar): samen 626 kB -> 295 kB.
-        width/height-attributen in de HTML meegewerkt. build/optimize-images.ps1
-        aangepast. Nieuw vercel.json geeft /assets/* een uur cache zonder
-        netwerkcontrole en daarna tot 7 dagen "stale-while-revalidate", in
-        plaats van de vorige "max-age=0, must-revalidate" op elk bestand.
-        Aanleiding: Mathieu ervoer de site als traag.
-    Zie de git-historie voor v0.6 t/m v1.1 voor het volledige verloop.
+    www.gelddelen.nl · informele privé-ophaalactie van Mathieu Rensen.
+    Websitetekst v1.5 · 25 september 2026.
+    Changelog t.o.v. v1.4:
+      - §2: 76% geverifieerd tegen de eigen nieuwspagina van de VU zelf
+        (vu.nl, 26 juni 2026, screenshot Mathieu 25-09-2026): "Hoewel 76
+        procent van de huishoudens nog altijd geld of goederen doneert...".
+        Daarmee vervalt de eerdere vermelding dat een andere bron 74% noemt;
+        dit is de bron zelf, niet een secundaire vermelding.
+    Changelog t.o.v. v1.3:
+      - Titel en OG-titel: "Een persoonlijke vraag van Mathieu Rensen" (was
+        "Mondéall: een persoonlijke vraag"), zodat de afzender in de
+        linkpreview staat. og:image nu een absoluut adres.
+      - Hero: zin toegevoegd dat Mondéall nog niet als werkend platform
+        bestaat (stond eerst pas in §6).
+      - §1: "een platform waar de overheid ondersteunt" -> aanvulling op wat
+        de overheid al doet (er is geen overheidspartner; status eerlijk).
+      - §2: "minstens €512 miljoen" (bron noemt een ondergrens).
+        TE VERIFIËREN in het rapport zelf: 76% (sommige bronnen noemen 74%,
+        mogelijk een andere definitie).
+      - §3: zin over Schuyts voorkeur voor de term aangepast (het citaat
+        eronder noemt "een filantropisch systeem"); "zonder tussenlaag" ->
+        "zonder dat er iets van een bijdrage wordt afgeroomd"; clausule over
+        subsidieregelingen die "verder afraken van de beleefde wereld"
+        geschrapt.
+      - §4: "geen verwijt aan de overheid" geschrapt (roept het frame op).
+      - §5: vergelijkingstabel en "Kortom"-alinea verwijderd (cijfers zonder
+        bron en peildatum; vergelijking niet gelijkwaardig; de onderbouwing
+        staat intern in de Notitie Mondeall vs WhyDonate). Bewering over
+        platforms afgestemd op die notitie: niet elk platform rekent een
+        percentage, en sommige staan een bijdrage van 1 euro niet toe.
+        "Al hebben gedekt" -> "gaan dragen" (Sponsors bestaan nog niet).
+        Dubbele passage over Sponsors samengevoegd.
+      - §6: zin over ANBI-status bij Stichting Naberschap geschrapt (status
+        staat niet vast); "via een gouden aandeel" geschrapt (juridische
+        vormgeving eerst verifiëren bij notaris); "Fonds op Naam altijd
+        kosteloos" geschrapt (product van Naberschap, kosten niet uitgezocht);
+        "Anoniem doneren" -> "Anoniem meedelen"; "geen tracking, geen volgen
+        van gebruikers" -> "geen advertentietracking en geen profielen van wie
+        meedeelt".
+      - §8: kicker "Crowdfunding" -> "Eerlijk over je bijdrage"; laatste twee
+        bullets samengevoegd.
+      - §9: kop "Volwaardig geld delen" -> "Zo draag je bij" (platformterm
+        hoort niet boven de privé-ophaalactie); zin over streefbedragen
+        herschreven als uitspraak over deze pagina.
+      - §10: verzoek om zelf te introduceren of eerst toestemming te vragen,
+        zodat niemand gegevens van derden hoeft door te geven.
+      - Footer: zin over bezoekcijfers zonder cookies en persoonsgegevens
+        (Vercel Web Analytics). TOETSEN via jurist-mondeall (AVG,
+        Telecommunicatiewet, verwerker).
+    Zie de git-historie voor v0.6 t/m v1.3 voor het volledige verloop.
 
     Bouwnotitie: de bouwprompt noemt als domein nog mondeall.eu; op verzoek van
     Mathieu draait deze pagina op www.gelddelen.nl (nog steeds los van het
@@ -40,7 +62,7 @@
     Deze pagina is bewust niet het platform mondeall.nl.
   -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mondéall: een persoonlijke vraag</title>
+  <title>Een persoonlijke vraag van Mathieu Rensen</title>
   <meta name="description" content="Een informele pagina van Mathieu Rensen voor familie, vrienden en bekenden: wat Mondéall wordt, hoe ver het is, en waar hij nu hulp bij vraagt voor de opstartkosten.">
   <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
   <meta name="google-site-verification" content="Fld660XU6FxK0EnsuYERCJDZlB6Xc3us_zv8sU7rN4M">
@@ -50,9 +72,9 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="nl_NL">
   <meta property="og:url" content="https://www.gelddelen.nl/">
-  <meta property="og:title" content="Mondéall: een persoonlijke vraag">
+  <meta property="og:title" content="Een persoonlijke vraag van Mathieu Rensen">
   <meta property="og:description" content="Een informele pagina voor familie, vrienden en bekenden over Mondéall en de opstartkosten van het initiatief.">
-  <meta property="og:image" content="assets/img/icon-512.png">
+  <meta property="og:image" content="https://www.gelddelen.nl/assets/img/icon-512.png">
 
   <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
@@ -79,9 +101,10 @@
     </picture>
     <p class="hero__tagline">Platform voor volwaardig geld delen</p>
     <h1>Een persoonlijke vraag aan iedereen die betekenisvol wil bijdragen</h1>
-    <p>Voor familie, vrienden en bekenden. Een korte uitleg over wat Mondéall wordt,
-       hoe ver het nu is en waar ik je hulp bij vraag. Dit staat los van het
-       latere platform.</p>
+    <p>Voor familie, vrienden en bekenden. Mondéall bestaat nog niet als
+       werkend platform. Hieronder lees je wat het wordt, hoe ver het nu is en
+       waar ik je hulp bij vraag. Deze pagina staat los van het latere
+       platform.</p>
     <p class="hero__by">Mathieu Rensen</p>
   </div>
 
@@ -112,8 +135,8 @@
          hebben altijd geld nodig en vormen het hart van een dorp of wijk.
          Daarbij maken lokale ondernemers en familiebedrijven het mogelijk dat
          elke euro gewoon naar het Initiatief gaat en dat iedereen anoniem kan
-         geven: een platform waar de overheid ondersteunt en aansluit bij wat
-         lokaal betekenisvol is.</p>
+         geven: een platform dat aansluit bij wat lokaal betekenisvol is, als
+         aanvulling op wat de overheid al doet.</p>
       <p>Wat mij drijft is uiteindelijk iets eenvoudigs. Een bijdrage wordt niet
          betekenisvol door het bedrag, maar door de aandacht die eraan
          voorafgaat: kijken naar wat er is, zien wat nodig is, het herkennen,
@@ -128,10 +151,15 @@
     <div class="wrap">
       <span class="section__kicker">02. Waar het aan schuurt</span>
       <h2 id="h-schuurt">Rijk genoeg, en toch</h2>
+      <!-- Bouwnotitie 24-09-2026, aangevuld 25-09-2026: cijfers gecontroleerd
+           tegen Geven in Nederland 2026 (presentatie 26 juni 2026): 2,35
+           miljard, 415 euro, 13% en 512 miljoen (ondergrens) kloppen. 76%
+           bevestigd tegen de eigen nieuwspagina van de VU (vu.nl,
+           26-06-2026). -->
       <p>Nederland is een rijk land. Huishoudens gaven in 2024 samen ruim €2,35
          miljard aan goede doelen: gemiddeld €415 per gevend huishouden, en 76%
          van de huishoudens gaf geld of goederen. Nalatenschappen leverden dat
-         jaar €512 miljoen op, een stijging van 13% ten opzichte van 2022
+         jaar minstens €512 miljoen op, een stijging van 13% ten opzichte van 2022
          (Bekkers, Koolen-Maas &amp; Schuyt, <em>Geven in Nederland 2026</em>,
          Centrum voor Filantropische Studies, Vrije Universiteit Amsterdam).
          Er is, in het groot, geen tekort.</p>
@@ -164,17 +192,17 @@
         <li><strong>De overheid</strong>: belasting, subsidie, zorg. Rechtvaardig
             en onmisbaar, maar noodzakelijk onpersoonlijk: gebonden aan regels, aan
             politiek, aan wat verantwoord kan worden. Een subsidieregeling reikt
-            tot een grens en raakt vaak verder af van de beleefde wereld en de
-            concrete behoeften van mensen. Daarachter staat geen loket meer.</li>
+            tot een grens. Daarachter staat geen loket meer.</li>
         <li><strong>Familie en naasten</strong>: de dierbaren die je helpen en
             ondersteunen als dat nodig is. Wie geluk heeft, heeft mensen om zich
             heen, maar niet iedereen heeft dat.</li>
         <li><strong>Maatschappelijke initiatieven</strong>: wat mensen vrijwillig
             voor elkaar overhebben. Denk aan vrijwilligers, verenigingen en
-            stichtingen, huishoudens die geven en bedrijven die sponsoren. Schuyt
-            gebruikt zelf liever deze term dan &ldquo;filantropie&rdquo;, een
-            woord dat al snel klinkt als iets voor de vermogenden, terwijl het in
-            de praktijk draait op gewone huishoudens.</li>
+            stichtingen, huishoudens die geven en bedrijven die sponsoren.
+            Schuyt spreekt van een filantropisch systeem. Hier heet het
+            maatschappelijke initiatieven, want &ldquo;filantropie&rdquo; klinkt
+            al snel als iets voor de vermogenden, terwijl het in de praktijk
+            draait op gewone huishoudens.</li>
       </ol>
       <p>Dat vierde systeem is geen restje dat overblijft. Het heeft een eigen
          functie: ruimte voor maatwerk, voor snelheid, voor lokale verschillen,
@@ -184,9 +212,9 @@
          een deel afromen, doelen die om aandacht concurreren, en gegevens die
          worden verzameld. Geven is een transactie geworden.</p>
       <p><strong>Mondéall is geen nieuw systeem. Het is een instrument binnen dit
-         vierde systeem.</strong> Het bestaat om maatschappelijke initiatieven weer
-         dichter bij mensen zelf te brengen: rechtstreeks, zonder tussenlaag,
-         zonder dat er iets wordt afgeroomd.</p>
+         vierde systeem.</strong> Mondéall wil maatschappelijke initiatieven weer
+         dichter bij mensen zelf brengen: rechtstreeks, en zonder dat er iets van
+         een bijdrage wordt afgeroomd.</p>
       <p>Mondéall kiest geen kant. Het enige criterium is of iets de buurt echt
          vooruithelpt.</p>
       <p class="bron">Schuyt zelf vat het zo samen: &ldquo;Heel kort geformuleerd
@@ -196,10 +224,15 @@
          systeem.&rdquo; (Theo Schuyt, afscheidsrede <em>Aandacht voor
          vermaatschappelijking</em>, Vrije Universiteit Amsterdam, 26 juni
          2026.)</p>
-      <!-- Bouwnotitie: "maatschappelijke initiatieven" is hier Schuyts brede term
+      <!-- Bouwnotitie: "maatschappelijke initiatieven" is hier de brede term
            voor het hele vierde systeem. Het platform gebruikt straks "Initiatief"
            (hoofdletter) voor één actie van één vereniging voor één voorziening,
-           zie §5. Dat onderscheid is in de tekst aangehouden. -->
+           zie §5. Dat onderscheid is in de tekst aangehouden.
+           TE VERIFIËREN: het citaat tegen de brontekst van de afscheidsrede.
+           De Projectinstructie noemt "maatschappelijke initiatieven" Schuyts
+           eigen term; het citaat gebruikt "filantropisch systeem". Is de
+           voorkeur van Schuyt in een bron vastgelegd, dan kan de oude
+           formulering terug. -->
     </div>
   </section>
 
@@ -218,8 +251,8 @@
       <p>Die reflex is niet verdwenen. Hij is bedolven geraakt. Mondéall wil hem
          weer ruimte geven, met de middelen van nu maar met de vanzelfsprekendheid
          van toen.</p>
-      <p>Dit is geen nostalgie en geen verwijt aan de overheid. Het is de
-         constatering dat sommige dingen alleen werken als we ze zelf doen.</p>
+      <p>Dit is geen nostalgie. Het is de constatering dat sommige dingen alleen
+         werken als we ze zelf doen.</p>
     </div>
   </section>
 
@@ -261,59 +294,29 @@
       <p>Ken je dat? Je wilt €15 geven aan een goed doel en tijdens het betalen
          verschijnt de vraag of je ook wilt bijdragen aan de kosten. Vink je
          &ldquo;ja&rdquo; aan, dan geef je opeens €21 of €26, zonder dat helder is
-         hoeveel daarvan bij het doel zelf terechtkomt. Bij Mondéall bestaat die
-         vraag niet. Wat je geeft, komt aan. Geen commissie, geen percentage dat
-         blijft hangen.</p>
+         hoeveel daarvan bij het doel zelf terechtkomt. Bij Mondéall komt die
+         vraag niet. Wat je meedeelt, komt aan. Geen commissie, geen percentage
+         dat blijft hangen.</p>
 
+      <!-- Bouwnotitie 24-09-2026: de vergelijkingstabel uit v1.3 is bewust
+           verwijderd. De onderbouwing met namen en peildata staat intern in
+           de Notitie Mondeall vs WhyDonate (23-09-2026) en gaat niet op de
+           site: geen cijfers van derden zonder bron en jaartal, geen namen
+           van platforms of goede doelen. -->
       <div class="euro">
         <h3>Een euro blijft een euro</h3>
         <p>Reken het eens na. Je wilt één euro delen met de muziekvereniging in je
-           dorp. Bij de meeste platforms gaat er per bijdrage een vast bedrag af
-           voor de verwerking, plus een percentage. Dat vaste bedrag is niet
-           groot, maar bij een bijdrage van één euro is het bijna alles. Wat er
-           dan aankomt, is een paar cent of helemaal niets.</p>
-        <p>Daarom bestaat &ldquo;delen vanaf één euro&rdquo; bij die platforms
-           eigenlijk niet. Het staat er wel, maar het werkt niet. Het model is
-           gebouwd op grotere bedragen, en kleine bijdragen worden er stilletjes
-           door opgegeten.</p>
-
-        <p>Dat geldt niet alleen voor crowdfundingplatforms. Ook bij veel
-           landelijke goede doelen gaat een deel van elke gift naar kosten
-           voordat de rest bij de missie terechtkomt. Een overzicht, gebaseerd
-           op eigen onderzoek van publiek beschikbare tarieven en cijfers, zonder
-           namen van platforms of goede doelen:</p>
-        <div class="table-wrap">
-          <table class="compare">
-            <thead>
-              <tr><th scope="col">Waar</th><th scope="col">Wat blijft er over van jouw euro</th></tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Platforms</td>
-                <td>Vaste kosten van circa €0,25 tot €1 per bijdrage, plus 2% tot
-                    7% van het bedrag. Bij een bijdrage van 1 euro blijft vaak
-                    weinig of niets over.</td>
-              </tr>
-              <tr>
-                <td>Goede doelen</td>
-                <td>Gemiddeld gaat circa 89 cent naar de missie, de rest naar
-                    kosten voor onder meer werving en beheer (CBF).</td>
-              </tr>
-              <tr>
-                <td>Mondéall</td>
-                <td>De volledige euro gaat naar het Initiatief.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p>Kortom: <strong>Mondéall&rsquo;s €&nbsp;1 blijft €&nbsp;1</strong>, ook waar andere
-           platforms of landelijke goede doelen van een kleine bijdrage per saldo
-           minder laten overblijven.</p>
-
+           dorp. Bij veel platforms gaat er per bijdrage een vast bedrag af voor
+           de verwerking, soms plus een percentage. Dat vaste bedrag is niet
+           groot, maar bij een bijdrage van één euro telt het zwaar.</p>
+        <p>Daarom werkt &ldquo;delen vanaf één euro&rdquo; bij veel platforms niet
+           echt. Bij sommige blijft er van die euro weinig over, andere staan zo&rsquo;n
+           kleine bijdrage niet eens toe. Het model is gebouwd op grotere
+           bedragen.</p>
         <p>Bij Mondéall blijft een euro een euro. Niet omdat wij zuiniger zijn,
            maar omdat er iemand anders betaalt: de lokale ondernemers, mkb&rsquo;ers
-           en familiebedrijven uit de buurt, die als sponsor de kosten van het
-           platform dragen, inclusief de kosten van elke transactie. Daardoor
+           en familiebedrijven uit de buurt, die als Sponsor de kosten van het
+           platform gaan dragen, inclusief de kosten van elke transactie. Daardoor
            hoeft er van jouw bijdrage niets af.</p>
         <p>Dat is precies waarom het bedrag er niet toe doet. Een bijdrage wordt
            niet betekenisvol door de hoogte, maar doordat iemand ziet wat er nodig
@@ -322,12 +325,10 @@
         <img class="euro__leaf" src="assets/img/klavertje.png" alt="" width="400" height="344" loading="lazy">
       </div>
 
-      <p>Dat kan omdat lokale ondernemers, mkb&rsquo;ers en familiebedrijven, als
-         sponsor de kosten van het platform al hebben gedekt, inclusief de
-         transactiekosten. Zij zijn niet een logo in de kantlijn. Zij zijn de
-         reden dat dit hele model kan bestaan. Zonder hen geen gratis meedelen en
-         dus geen Mondéall. Ken je een ondernemer die hier goed bij past? Dat
-         gesprek komt eraan zodra het platform klaarstaat.</p>
+      <p>Die ondernemers zijn niet een logo in de kantlijn. Zij zijn de reden dat
+         dit model kan bestaan. Zonder Sponsors geen gratis meedelen en dus geen
+         Mondéall. Ken je een ondernemer die hier goed bij past? Dat gesprek komt
+         eraan zodra het platform klaarstaat.</p>
       <p>Geen streefbedrag, geen druk, geen dataverkoop. Wie meedeelt, hoeft niets
          achter te laten wat hij niet wil.</p>
     </div>
@@ -345,13 +346,12 @@
             een jurist moet nog gebeuren.</li>
         <li><strong>Stichting Naberschap</strong> is in oprichting: de stichting
             die op langere termijn vermogen opbouwt en zelfstandig besteedt.
-            Ikzelf zal geen deel uitmaken van het bestuur. De ANBI-status geeft
-            belastingvoordelen, maar kost ook meer.</li>
+            Ikzelf zal geen deel uitmaken van het bestuur.</li>
         <li><strong>Mondéall B.V.</strong>, die het platform gaat uitvoeren, moet
             nog bij de notaris worden opgericht.</li>
-        <li>Op termijn wordt een stichting eigenaar van Mondéall (via een gouden
-            aandeel), zodat het platform nooit verkocht kan worden en de missie
-            voorop blijft staan.</li>
+        <li>Op termijn wordt een stichting eigenaar van Mondéall, zodat het
+            platform nooit verkocht kan worden en de missie voorop blijft
+            staan.</li>
         <li>De eerste praktijktoets staat gepland bij een sportvereniging in Lochem.</li>
       </ul>
 
@@ -373,10 +373,10 @@
         <li>Dataminimalistisch en met onafhankelijke systemen: niet vast aan één
             leverancier, en data in een open formaat.</li>
         <li>Geen reclame en geen doorverkoop van persoonsgegevens.</li>
-        <li>Privacy gewaarborgd: geen tracking, geen volgen van gebruikers.</li>
-        <li>Anoniem doneren mogelijk, al vanaf één euro.</li>
-        <li>Een Initiatief starten of een Fonds op Naam inrichten is altijd
-            kosteloos.</li>
+        <li>Privacy voorop: geen advertentietracking en geen profielen van wie
+            meedeelt.</li>
+        <li>Anoniem meedelen mogelijk, al vanaf één euro.</li>
+        <li>Een Initiatief starten is kosteloos.</li>
       </ul>
     </div>
   </section>
@@ -410,7 +410,7 @@
   <!-- 08 -->
   <section class="section section--tint" id="niet" aria-labelledby="h-niet">
     <div class="wrap">
-      <span class="section__kicker">08. Crowdfunding</span>
+      <span class="section__kicker">08. Eerlijk over je bijdrage</span>
       <h2 id="h-niet">Wat er niet met jouw bijdrage gebeurt</h2>
       <p>Eerlijk is eerlijk, dus dit staat er gewoon:</p>
       <ul>
@@ -424,13 +424,10 @@
         <li>Dit is <strong>iets anders dan het platform zelf</strong>. Zodra
             Mondéall draait, gaat elke bijdrage aan een Initiatief voor honderd
             procent rechtstreeks naar de vereniging of stichting, nooit naar mij
-            en nooit naar het bedrijf. Die belofte geldt straks. Deze
-            opstartbijdrage valt daarbuiten.</li>
-        <li>Deze belofte (een euro blijft een euro) gaat over het platform
-            straks. <strong>Wat je nu bijdraagt is iets anders</strong>: dat komt
-            rechtstreeks bij mij privé terecht als tegemoetkoming in de
-            opstartkosten, en daar zit geen platform, geen entiteit en geen
-            belofte tussen.</li>
+            en nooit naar het bedrijf. Die belofte geldt straks. Wat je nu
+            bijdraagt komt rechtstreeks bij mij privé terecht, als
+            tegemoetkoming in de opstartkosten, zonder platform, entiteit of
+            belofte ertussen.</li>
       </ul>
     </div>
   </section>
@@ -439,10 +436,10 @@
   <section class="section" id="bijdragen" aria-labelledby="h-bijdragen">
     <div class="wrap">
       <span class="section__kicker">09. Maak &rsquo;t mogelijk</span>
-      <h2 id="h-bijdragen">Volwaardig geld delen</h2>
-      <p>Mondéall werkt niet met streefbedragen of urgentie. Geven doe je op
-         basis van vertrouwen. Zelfs een euro kan betekenisvol zijn. Bijdragen
-         kan met Tikkie. Ga naar de bijdragepagina en geef wat je wilt geven.</p>
+      <h2 id="h-bijdragen">Zo draag je bij</h2>
+      <p>Er is geen streefbedrag en geen haast. Geven doe je op basis van
+         vertrouwen, en zelfs een euro kan betekenisvol zijn. Bijdragen kan met
+         Tikkie: ga naar de bijdragepagina en kies zelf het bedrag.</p>
 
       <div class="geef">
         <a class="btn" href="steun/">
@@ -467,8 +464,9 @@
       <p>Wil je zelf een rol spelen? Of ken je iemand in jouw omgeving, een
          vriend, een kennis, een ondernemer, die dit ook zou willen? Laat het
          me weten via
-         <a href="mailto:mathieu.rensen@outlook.com">mathieu.rensen@outlook.com</a>,
-         dan neem ik contact op.</p>
+         <a href="mailto:mathieu.rensen@outlook.com">mathieu.rensen@outlook.com</a>.
+         Liever stel je zelf even voor, of je vraagt eerst of ik contact mag
+         opnemen. Dan hoef je geen gegevens van anderen door te geven.</p>
     </div>
   </section>
 
@@ -498,7 +496,9 @@
        een bedrijf of stichting en los van het latere platform.</p>
     <p>Deze pagina is bewust niet vindbaar via zoekmachines en niet bedoeld voor
        algemene verspreiding.</p>
-    <p class="foot__meta">Websitetekst v1.3 · 16 september 2026 · www.gelddelen.nl</p>
+    <p>Deze pagina telt alleen hoe vaak ze wordt bezocht, zonder cookies en
+       zonder persoonsgegevens.</p>
+    <p class="foot__meta">Websitetekst v1.5 · 25 september 2026 · www.gelddelen.nl</p>
   </div>
 </footer>
 
@@ -506,7 +506,8 @@
      persoonsgegevens (zie Vercel's documentatie). Bewuste afwijking van de
      eerdere "geen tracking"-regel in README-website.md, op verzoek van
      Mathieu (16-09-2026) om te kunnen zien hoe vaak de pagina bezocht wordt.
-     Zelfde hostnaam, geen third-party domein. -->
+     Zelfde hostnaam, geen third-party domein. De footerzin hierboven
+     moet kloppen met de werkelijke instelling: toetsen via jurist-mondeall. -->
 <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
