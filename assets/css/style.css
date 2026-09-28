@@ -169,6 +169,13 @@ main { display: block; }
   font-size: .92em; color: var(--ink-soft);
   padding-left: .9rem; border-left: 2px solid var(--line);
 }
+.gedicht {
+  font-family: var(--serif); font-style: italic;
+  font-size: 1.12em; line-height: 1.65;
+  color: var(--ink);
+  margin: 0 0 1.4rem;
+}
+.gedicht span { display: block; }
 
 /* lists */
 .section ul, .section ol { margin: 0 0 1.2rem; padding-left: 0; list-style: none; }
