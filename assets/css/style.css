@@ -361,3 +361,31 @@ em { font-style: italic; }
   .section li.met-logo { grid-template-columns: 1fr; }
   .entiteit-logo { width: 9rem; }
 }
+
+/* ---------- "in het kort" (boven §1) ---------- */
+.kort .section__kicker { margin-bottom: .8rem; }
+.section.kort h2.kort__lead {
+  font-size: clamp(1.35rem, 1.1rem + 1.4vw, 1.9rem); line-height: 1.35;
+  max-width: 44rem; margin: 0 0 1.8rem;
+}
+.kort__grid { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+@media (min-width: 760px) { .kort__grid { grid-template-columns: repeat(3, 1fr); gap: 1.2rem; } }
+.kort__card {
+  background: var(--paper); border: 1.5px solid var(--line); border-radius: 14px;
+  padding: 1.2rem 1.25rem 1.3rem; box-shadow: var(--shadow);
+}
+.section .kort__card h3 {
+  margin: 0 0 .6rem; font-family: var(--sans); font-size: .8rem; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--teal-strong);
+}
+.kort__card p { font-size: .98rem; }
+.kort__card--accent { border-color: var(--teal-strong); background: var(--teal-tint); }
+.section .kort__card p.kort__big {
+  font-family: var(--serif); font-size: 1.28rem; line-height: 1.35; margin-bottom: .6rem;
+}
+.kort__vraag { margin: 1.4rem 0 0; display: grid; gap: 1rem; }
+@media (min-width: 760px) {
+  .kort__vraag { grid-template-columns: 1fr auto; align-items: center; gap: 1.6rem; padding: 1.3rem 1.5rem; }
+}
+.kort__vraag p { margin: 0; }
+.kort__vraag .btn { justify-self: start; }
