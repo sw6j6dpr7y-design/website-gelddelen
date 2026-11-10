@@ -413,3 +413,6 @@ em { font-style: italic; }
 .techniek__item { border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.15rem; background: var(--paper); }
 .section .techniek__item h3 { margin: 0 0 .35rem; font-size: 1.1rem; }
 .techniek__item p { margin: 0; font-size: .98rem; }
+.domein li::before, .cijfers li::before { content: none; display: none; }
+.domein li, .cijfers li { padding-left: 0; }
+.domein li { padding: .35rem 0; }
