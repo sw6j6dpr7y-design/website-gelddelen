@@ -389,3 +389,27 @@ em { font-style: italic; }
 }
 .kort__vraag p { margin: 0; }
 .kort__vraag .btn { justify-self: start; }
+
+/* Vier domeinen / twaalf sectoren (v1.24) */
+.domeinen { display: grid; gap: 1rem; grid-template-columns: 1fr; margin: 1.6rem 0 1rem; }
+@media (min-width: 700px) { .domeinen { grid-template-columns: repeat(2, 1fr); } }
+.domein {
+  background: var(--paper); border: 1px solid var(--line); border-top: 4px solid var(--teal-strong);
+  border-radius: 10px; padding: 1.1rem 1.2rem 1.2rem; box-shadow: var(--shadow);
+}
+.section .domein h3 { margin: 0 0 .15rem; font-family: var(--serif); font-size: 1.3rem; }
+.domein__meta { margin: 0 0 .7rem; font-size: .9rem; color: var(--ink); opacity: .75; }
+.domein ul { list-style: none; margin: 0; padding: 0; }
+.domein li { display: flex; justify-content: space-between; gap: 1rem; padding: .35rem 0; border-top: 1px solid var(--line); font-size: .98rem; }
+.domein li span:last-child { white-space: nowrap; opacity: .75; font-size: .9rem; }
+.domein--sociaal { border-top-color: var(--teal); }
+.cijfers { display: flex; flex-wrap: wrap; gap: .6rem 1.6rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+.cijfers li { font-size: .98rem; }
+.cijfers strong { font-family: var(--serif); font-size: 1.6rem; color: var(--teal-strong); margin-right: .3rem; }
+
+/* Techniek (v1.24) */
+.techniek { display: grid; gap: 1rem; grid-template-columns: 1fr; margin: 1.4rem 0; }
+@media (min-width: 700px) { .techniek { grid-template-columns: repeat(2, 1fr); } }
+.techniek__item { border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.15rem; background: var(--paper); }
+.section .techniek__item h3 { margin: 0 0 .35rem; font-size: 1.1rem; }
+.techniek__item p { margin: 0; font-size: .98rem; }
